@@ -21,6 +21,7 @@ pillow = ">=10.4.0,<11.0.0"
 RPi_GPIO = "0.7.1,<0.8.0"
 spidev = ">=3.6,<4.0"
 gpiozero = ">=2.0.1,<3.0.0"
+lgpio = ">=0.2.2.0,<0.3.0.0"
 
 [tool.poetry.group.dev]
 optional = true
