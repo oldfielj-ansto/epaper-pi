@@ -12,7 +12,9 @@ picdir = "/home/oldfielj/src/misc/epaper-pi/pics"
 try:
     logging.info("epd7in5_V2 Demo")
     epd = epd7in5_V2.EPD()
-    
+
+    time.sleep(3.0)
+
     logging.info("init and Clear")
     epd.init()
     epd.Clear()
