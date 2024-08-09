@@ -1,20 +1,21 @@
 import sys
-import os
 import logging
+import os
+from os.path import dirname as os_dirname, join as os_joinpath, realpath as os_realpath
 from waveshare_epd import epd7in5_V2
 import time
 from PIL import Image,ImageDraw,ImageFont
 import traceback
 
+CUR_DIR = os_dirname(os_realpath(__file__))
+picdir = os_realpath(os_joinpath(CUR_DIR, "./pics"))
+
 logging.basicConfig(level=logging.DEBUG)
-picdir = "/home/oldfielj/src/misc/epaper-pi/pics"
 
 try:
     logging.info("epd7in5_V2 Demo")
     epd = epd7in5_V2.EPD()
-
-    time.sleep(3.0)
-
+    
     logging.info("init and Clear")
     epd.init()
     epd.Clear()
