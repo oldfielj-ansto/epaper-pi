@@ -22,7 +22,7 @@ pillow = ">=10.4.0,<11.0.0"
 [tool.poetry.group.server]
 optional = true
 
-[tool.poetry.group.server]
+[tool.poetry.group.server.dependencies]
 fastapi = ">=0.112.0,<0.200.0"
 pydantic = ">=2.8.2,<2.9.0"
 uvicorn = ">=0.30.5,<0.40.0"
